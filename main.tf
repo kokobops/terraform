@@ -47,6 +47,6 @@ resource "yandex_compute_instance" "test-vm" {
   }
 
   metadata = {
-    ssh-keys = "centos:${file("/home/centos/.ssh/id_rsa.pub")}"
+    ssh-keys = "centos:${file("id_rsa.pub")}"
   }
 }
